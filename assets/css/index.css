@@ -1,0 +1,54 @@
+:root{
+    --main: #FA6F01;;
+}
+body{
+    background-color: #f0f0f0;
+}
+.top-nav{
+    background-color: var(--main);
+    border-radius: 0px 0px 30px 30px;
+}
+.top-nav-right div p{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 8.5px;
+}
+.top-nav-right div:last-child{
+    margin-left: 10px;
+}
+.top-nav-left{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.top-nav-left a{
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.top-nav-left a i{
+  color: var(--main);
+}
+
+
+/* main-navbar */
+.logo img{
+    width: 5rem;
+    height: 5rem;
+}
+.nav-content{
+    background-color: white;
+    border-radius: 50px;
+}
+.main-nav{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    width: 100%;
+}
