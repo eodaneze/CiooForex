@@ -2,4 +2,16 @@
     .top-nav{
         display: none;
     }
+    .nav-content-change{
+        /* background-color: black; */
+        border-radius: 0px;
+    }
+    /* .nav-content{
+        background-color: white;
+        border-radius: 50px;
+        visibility: hidden;
+    } */
+    .main-nav-change{
+        margin-left: 0;
+    }
 }

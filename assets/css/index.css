@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 :root{
-    --main: #FA6F01;;
+    --main: #FA6F01;
+    --font: 'PT Serif', serif;
 }
 body{
     background-color: #f0f0f0;
+    /* z-index: -10; */
 }
 .top-nav{
     background-color: var(--main);
@@ -37,14 +40,26 @@ body{
 }
 
 
-/* main-navbar */
+/* -------------------main-navbar ----------------------*/
 .logo img{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 .nav-content{
     background-color: white;
     border-radius: 50px;
+    /* z-index: 10; */
+}
+.nav-content-change{
+    background-color: white;
+    border-radius: 0px;
+}
+.main-nav{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    z-index: 10;
 }
 .main-nav{
     position: fixed;
@@ -52,3 +67,151 @@ body{
     margin-bottom: 30px;
     width: 100%;
 }
+.main-nav-change{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 8%;
+}
+/* .all-navbar{
+    background-color: white;
+}
+.all-navbar .main-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 40px;
+} */
+/* .all-navbar .main-nav-js{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+
+.navbar-nav li:nth-child(1){
+    background-color: var(--main);
+    padding: 17px;
+}
+.navbar-nav li:nth-child(2){
+    background-color: black;
+    padding: 17px;
+}
+.navbar-nav li:nth-child(3){
+    background-color: #0875E6;
+    padding: 17px;
+}
+.navbar-nav li:nth-child(4){
+    background-color: #fff;
+    padding: 17px;
+}
+.navbar-nav li:nth-child(5){
+    background-color: var(--main);
+    padding: 17px;
+    border-radius: 50px;
+}
+.navbar-nav li a{
+    color: white;
+}
+/* ------------------- end of main-navbar----------------- */
+
+/* ------------------- Hero section----------------- */
+.all-background{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../assets/img/hero-2.webp) center/cover fixed no-repeat;
+    height: 100vh;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hero-content div h1{
+    color: white;
+    font-family: var(--font);
+}
+.hero-content div h1 span{
+    display: block;
+}
+.hero-content div h4{
+    font-family: var(--font);
+    color: #ccc;
+}
+.hero-content div h4 span{
+    display: block;
+    line-height: 2rem;
+}
+.hero-btn button:first-child{
+    background-color: var(--main);
+    border-radius: 30px;
+    color: white;
+    border: 3px solid #fff;
+}
+.hero-btn button:last-child{
+    background-color: var(--main);
+    color: white;
+    border-radius: 30px;
+    border: 3px solid #fff;
+}
+/* ------------------- end of Hero section----------------- */
+
+/* -------------------about-section---------------- */
+.all-about{
+    background-color: #021220;
+    padding: 10px;
+}
+.title h1{
+    position: relative;
+    font-family: var(--font);
+    padding-bottom: 10px ;
+}
+.title h1::before{
+    content: "";
+    position: absolute;
+    width: 8rem;
+    height: 4px;
+    background-color: var(--main);
+    bottom: 0;
+}
+/* -------------------end of about-section---------------- */
+
+
+
+
+
+
+/* ----------------------back to top-------------------------- */
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #6bc1e9;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+/* ----------------------end of back to top-------------------------- */
