@@ -135,6 +135,12 @@ body{
 .hero-content div h1{
     color: white;
     font-family: var(--font);
+    transition: .30s ease;
+}
+.hero-content div h1:hover{
+   -webkit-text-stroke: .5px #fff;
+   color: transparent;
+   cursor: pointer;
 }
 .hero-content div h1 span{
     display: block;
@@ -328,10 +334,83 @@ body{
 .mentorship-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 2fr 1fr 1fr; */
     gap: 2rem;
 }
-
-
+.mentorship-2 img{
+    border-radius: 10px 10px 0px 0px;
+}
+.mentorship-2{
+    background-color: #1E47E3;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.mentorship-2 div{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mentorship-2 div button:first-child{
+    background-color: #0875E6;
+    padding: 8px 30px;
+    border-radius: 50px;
+    border: none;
+    border: 4px solid #fff;
+    color: white;
+    font-family: var(--font);
+}
+.mentorship-2 div button:last-child{
+    background-color: var(--main);
+    padding: 8px 30px;
+    border-radius: 50px;
+    border: none;
+    border: 4px solid #fff;
+    color: white;
+    font-family: var(--font);
+}
+.mentorship-includes p span{
+    display: block;
+    color: white;
+    line-height: 2rem;
+}
+.mentorship-includes p span:nth-child(1){
+    font-weight: bolder;
+    font-family: var(--font);
+}
+.bell h2{
+    font-weight: 400;
+    transition: .30s ease;
+    color: white;
+}
+.bell h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    /* font-weight: 400; */
+}
+.bell p{
+    color: #ccc;
+    font-size: 20px;
+}
+ul ol li{
+    line-height: 2rem;
+    font-size: 18px;
+}
+.all-btn{
+    margin-top: 30px;
+}
+.all-btn button{
+background-color: #0875E6;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 30px;
+  color: white;
+  border: 2px solid #fff;
+  transition: .30s ease;
+}
+.all-btn button:hover{
+    background-color: transparent;
+}
 /* end of mentorship-section */
 
 
