@@ -343,6 +343,7 @@ body{
 }
 .mentorship-2{
     background-color: #1E47E3;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 .mentorship-2 div{
@@ -403,10 +404,11 @@ ul ol li{
 background-color: #0875E6;
   border: none;
   border-radius: 50px;
-  padding: 8px 30px;
+  padding: 8px 10px;
   color: white;
   border: 2px solid #fff;
   transition: .30s ease;
+  margin-bottom: 10px;
 }
 .all-btn button:hover{
     background-color: transparent;
