@@ -321,7 +321,7 @@ body{
     color: #555;
 }
 .plan-btn button{
-    background-color: #0875E6;
+    background-color: var(--main);
     border: none;
     color: white;
     padding: 8px 20px;
