@@ -178,6 +178,11 @@ body{
     background-color: #021220;
     padding: 40px;
 }
+.about-img{
+  background-color: white;
+  height: fit-content;
+  padding: 15px;
+}
 .title h1{
     position: relative;
     font-family: var(--font);
