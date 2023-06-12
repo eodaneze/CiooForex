@@ -6,6 +6,7 @@
 }
 body{
     background-color: #f0f0f0;
+    scroll-behavior: smooth;
     /* z-index: -10; */
 }
 .container-1{
