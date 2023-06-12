@@ -25,7 +25,8 @@ body{
 }
 .top-nav-icon a:nth-child(1),
 .top-nav-icon a:nth-child(2),
-.top-nav-icon a:nth-child(3)
+.top-nav-icon a:nth-child(3),
+.top-nav-icon a:nth-child(5)
 {
   width: 2rem;
   height: 2rem;
@@ -43,7 +44,7 @@ body{
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: #0e7227;
+  background-color: #071638;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +147,7 @@ body {
   color: #fff;
   font-family: sans-serif;
 }
-.slide  {
+.slides  {
   text-decoration: none;
   color: inherit;
 }
@@ -165,7 +166,7 @@ body {
   line-height: 75vh;
   font-size: 10vmin;
 }
-.slide {
+.slides {
   float: left;
   height: 100%;
   width: 0;
@@ -174,7 +175,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-.slide > * {
+.slides > * {
   transition: transform .15s linear;
   transform: scale(0);
 }
