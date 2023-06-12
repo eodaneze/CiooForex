@@ -124,7 +124,7 @@ body{
 
 /* ------------------- Hero section----------------- */
 .all-background{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../assets/img/hero-2.webp) center/cover fixed no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../assets/img/about-2.jpg) center/cover fixed no-repeat;
     height: 100vh;
 }
 .hero-content{
@@ -134,7 +134,7 @@ body{
     height: 100vh;
 }
 .hero-content div h1{
-    color: white;
+    color: #fff;
     font-family: var(--font);
     transition: .30s ease;
 }
@@ -146,13 +146,18 @@ body{
 .hero-content div h1 span{
     display: block;
 }
+
 .hero-content div h4{
     font-family: var(--font);
-    color: #ccc;
+    color: #fff;
 }
 .hero-content div h4 span{
     display: block;
-    line-height: 2rem;
+    line-height: 2.5rem;
+}
+.hero-content div h4 span:nth-child(3){
+  font-size: 20px;
+  color: #f0f0f0 !important;
 }
 .hero-btn button:first-child{
     background-color: var(--main);
@@ -171,7 +176,7 @@ body{
 /* -------------------about-section---------------- */
 .all-about{
     background-color: #021220;
-    padding: 10px;
+    padding: 40px;
 }
 .title h1{
     position: relative;
@@ -185,6 +190,20 @@ body{
     height: 4px;
     background-color: var(--main);
     bottom: 0;
+}
+.about-btn a{
+  background-color: var(--main);
+  padding: 8px 30px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  transition: .30s ease;
+}
+.about-btn a:hover{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  text-decoration: none;
 }
 /* -------------------end of about-section---------------- */
 .all-choose{
