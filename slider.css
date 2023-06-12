@@ -1,0 +1,395 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    .hide {
+      display: none !important;
+    }
+  }
+  /*..................*/
+  
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .slider {
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    top: 11%;
+  }
+  @media only screen and (max-width: 768px) {
+    .slider {
+      position: absolute;
+      padding: 10%;
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+      left: 0;
+      top: 0;
+    }
+  }
+  /*.......Slider...........*/
+  
+  .sb-box {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: -4vh;
+    height: 14%;
+    width: 27%;
+    right: 1vw;
+    z-index: 999;
+    background-color: #e54b4b;
+  }
+  @media only screen and (max-width: 768px) {
+    .sb-box {
+      bottom: 4vh;
+      right: 14vw;
+    }
+  }
+  
+  .hero-carousel {
+    position: relative;
+  }
+  .carousel-item img {
+    height: 475px !important;
+    width: 450px !important;
+    object-fit: cover;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 40%;
+  }
+  .carousel-control-prev {
+    left: 0;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+  .carousel-control-prev-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org'); */
+    opacity: 1;
+    height: 100px;
+    
+    background-repeat: no-repeat;
+  }
+  .carousel-control-next-icon {
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org'); */
+    opacity: 1;
+    height: 100px;
+   
+    background-repeat: no-repeat;
+    float: left;
+  }
+  
+  /*.......Sec Two...........*/
+  .lrb {
+    position: absolute;
+    width:2.5vw;
+    height:80vh;
+     background-color: #e54b4b;
+    right:0;
+    top:0;
+  }
+  .lgb {
+    position: absolute;
+    width:2.5vw;
+   background-color: #5d5c69 !important;
+    bottom:0;
+    right:0;
+    height:20vh;
+  }
+  .red-sec {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    background-color: #e54b4b;
+    width: 40%;
+    z-index: 2;
+    left: 0;
+  }
+  .grey-sec {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    background-color: #f4f4f4;
+    width: 60%;
+    z-index: 2;
+    left: 40%;
+  }
+  @media only screen and (max-width: 768px) {
+    .grey-sec {
+      width: 100% !important;
+      display: block;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      bottom: 0;
+      top: 0;
+    }
+  }
+  .rbg {
+    background-image: url(http://lp3.1a5.myftpupload.com/wp-content/uploads/2019/02/memphis-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    z-index: -1;
+  }
+  /*.......Intro Text...........*/
+  
+  .intro-box {
+    left: 58%;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    top: 18%;
+    z-index: 999;
+  }
+  @media only screen and (max-width: 768px) {
+    .intro-box {
+      top: 70vh;
+      left: 0;
+      width: 60%;
+      background-color: #fff;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+  .in-txt {
+    font-size: 46px;
+    letter-spacing: -0.01em;
+    font-weight: 800;
+    line-height: 3.4rem;
+    color: #5d5c69;
+    width: 70%;
+    margin-top: 4vh;
+  }
+  @media only screen and (max-width: 768px) {
+    .in-txt {
+      font-size: 26px;
+      line-height: 1.5em;
+      color: #e54b4b;
+      width: 80%;
+      margin: 5% 10%;
+    }
+  }
+  .in-title {
+    margin-bottom: 2vh;
+    font-weight: 600;
+    color: #5d5c69;
+    font-size: 18px;
+  }
+  .in-title:after {
+    position: absolute;
+    content: "";
+    background: #e54b4b;
+    height: 3px;
+    width: 10%;
+    display: block;
+    margin-top: 0.5em;
+    opacity: 0.8;
+  }
+  .in-b-txt {
+    margin-bottom: 6vh;
+    font-weight: 400;
+    color: #5d5c69;
+    font-size: 16px;
+    margin-top: 2vh;
+    width: 60%;
+  }
+  
+  /*.........Left Text...............*/
+  
+  .l-box {
+    left: 12vw;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    text-align: left;
+    top: -4vh;
+    z-index: 999;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .social-wrapper {
+    position: absolute;
+    text-align: center;
+    top: 25vh;
+    left: -1vw;
+    line-height: 1;
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .s-down {
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    left: -3.5vw;
+    width: 100%;
+    line-height: 1;
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+  .s-down a {
+    font-family: "Poppins", sans-serif;
+    color: #f4f4f4 !important;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1.4rem;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 0.8rem;
+    overflow: hidden;
+  }
+  
+  .s-down a:hover {
+  }
+  .s-down a:before {
+    position: absolute;
+    top: 25%;
+    right: 11vw;
+    width: 40%;
+    height: 1px;
+    background: #f4f4f4;
+    content: " ";
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+  
+  /*............Social..........*/
+  .social-wrapper {
+    left: 6.8rem;
+    top: 98%;
+  }
+  @media only screen and (max-width: 768px) {
+    .social-wrapper {
+      left: -6vw !important;
+      top: 97% !important;
+      z-index: 3;
+    }
+  }
+  .social-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+  }
+  .social-wrapper ul li:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .social-wrapper a {
+    text-decoration: none;
+    color: #f4f4f4 !important;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+    .social-wrapper a {
+      color: #e54b4b !important;
+    }
+  }
+  .social-wrapper a:hover {
+    cursor: pointer;
+    -webkit-transition: color 0.15s ease-out;
+    -moz-transition: color 0.15s ease-out;
+    transition: color 0.15s ease-out;
+    color: #5d5c69 !important;
+  }
+  
+  /*.......btn..........*/
+  
+  .button-block {
+    position: absolute;
+    left: 0;
+    bottom: -2.5rem;
+    z-index: 7;
+    transition: all 0.25s ease-out;
+  }
+  .button-block {
+    display: inline-block;
+    padding: 1em 1.3em 1em;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+  }
+  .button-block--brand {
+    border: 2px solid #5d5c69;
+    color: #5d5c69;
+    box-shadow: 2px 2px 0;
+  }
+  .button-block--brand:hover {
+    border: 2px solid #e54b4b;
+    color: #e54b4b;
+    box-shadow: -2px -2px 0;
+    -webkit-transition: color 0.15s ease-out;
+    -moz-transition: color 0.15s ease-out;
+    transition: color 0.15s ease-out;
+    transition: all 0.4s;
+    text-decoration: none !important;
+  }
+  .button-block--brand:hover:after {
+    content: "";
+    position: absolute;
+    left: 14%;
+    bottom: 13px;
+    width: 80%;
+    background: url(https://promo-theme.com/rolly/wp-content/themes/rolly/images/nav-hover.png)
+      50% repeat;
+    background-size: 12px auto;
+    height: 12px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  
