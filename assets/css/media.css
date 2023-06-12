@@ -2,10 +2,24 @@
     .top-nav{
         display: none;
     }
-    .nav-content-change{
-        /* background-color: black; */
+    .main-nav-chang{
+        background-color: black;
         border-radius: 0px;
     }
+    .navbar-nav li:nth-child(1),
+    .navbar-nav li:nth-child(2),
+    .navbar-nav li:nth-child(3),
+    .navbar-nav li:nth-child(4),
+    .navbar-nav li:nth-child(5)
+    {
+        margin-bottom: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    /* .nav-content-change{
+        background-color: #000;
+        border-radius: 0px;
+    } */
     /* .nav-content{
         background-color: white;
         border-radius: 50px;
@@ -52,9 +66,7 @@
         font-family: var(--font);
     }
     .all-reviews{
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
     .all-screen-shot{
         margin-top: 15%;

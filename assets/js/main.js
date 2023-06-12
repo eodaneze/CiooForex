@@ -18,8 +18,10 @@ window.addEventListener('scroll', () => {
 
     if(window.pageYOffset > 100){
         nav_content.classList.add('main-nav-change')
+        nav_content.classList.add('nav-content-change')
     }else if(window.pageYOffset < 100){
         nav_content.classList.remove('main-nav-change')
+        nav_content.classList.remove('nav-content-change')
     }
 })
 

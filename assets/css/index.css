@@ -55,7 +55,7 @@ body{
     /* z-index: 10; */
 }
 .nav-content-change{
-    background-color: white;
+    /* background-color: #fff; */
     border-radius: 0px;
 }
 .main-nav{
@@ -75,8 +75,8 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
-    margin-top: 10px;
-    background-color: white;
+    /* margin-top: 10px; */
+    background-color: #fff;
     margin-left: 8%;
 }
 /* .all-navbar{
@@ -93,7 +93,6 @@ body{
     top: 0;
     width: 100%;
 } */
-
 
 .navbar-nav li:nth-child(1){
     background-color: var(--main);
@@ -551,10 +550,16 @@ background-color: #0875E6;
     font-family: var(--font);
 }
 .review-text{
-    background-color: var(--main);
+    background-color: transparent;
     color: white;
     border-radius: 0px 0px 10px 10px;
     height: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+}
+.review-text h3{
+  text-align: center;
+  color: var(--main);
 }
 /*end of  screenshot testimonal section */
 
