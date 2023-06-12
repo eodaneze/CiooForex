@@ -293,6 +293,7 @@ body{
 .price-1{
     padding: 30px;
     border-radius: 20px;
+    margin-bottom: 20px;
     /* border-top: 3px solid var(--main); */
 }
 .price-1 div h4{
@@ -527,6 +528,7 @@ background-color: #0875E6;
     background-color: #0875E6;
     padding: 2px 3px 5px 2px;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .testimonial-logo{
     display: flex;
