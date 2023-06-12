@@ -71,4 +71,11 @@
     .all-screen-shot{
         margin-top: 15%;
     }
+    .back-video{
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 }

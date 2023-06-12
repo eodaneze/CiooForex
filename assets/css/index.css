@@ -78,6 +78,7 @@ body{
     /* margin-top: 10px; */
     background-color: #fff;
     margin-left: 8%;
+    padding: 10px;
 }
 /* .all-navbar{
     background-color: white;
@@ -509,8 +510,8 @@ background-color: #0875E6;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../assets/img/trade-1.jpg) center/cover fixed no-repeat;
     padding: 50px;
     /* height: 50vh; */
-    margin-bottom: 60px;
-    border-bottom: 4px dashed var(--main);
+
+    border-bottom: 4px ridge var(--main);
     border-top: 4px dashed var(--main);
 }
 .all-reviews{
@@ -562,6 +563,57 @@ background-color: #0875E6;
   color: var(--main);
 }
 /*end of  screenshot testimonal section */
+
+
+/* start trade section */
+.cta-text{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   height: 40vh;
+}
+.cta{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.cta-btn button{
+    border: none;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: .30s ease;
+}
+.cta-btn button:hover{
+    background-color: var(--main);
+}
+.trade-img img{
+    width: 100%;
+}
+.back-video{
+    /* width: 100%; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100% ;
+    }
+}
+/* end of start trade section */
 
 
 
