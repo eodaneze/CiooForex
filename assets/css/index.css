@@ -441,6 +441,29 @@ background-color: #0875E6;
 /* end of mentorship-section */
 
 
+/* learn how to trade section */
+.all-learn{
+  background-color: black;
+}
+.learn-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.learn-1 p{
+  color: white;
+  font-size: 16px;
+}
+.learn-1 p span{
+  color: var(--main);
+}
+.learn-1 p a{
+  text-decoration: none;
+  color: var(--main);
+}
+/*end of  learn how to trade section */
+
+
 /* testimonial-area */
 .testimonial-area {
 	padding: 80px 0;
