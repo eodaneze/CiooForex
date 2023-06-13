@@ -1,7 +1,11 @@
 @media(max-width: 600px){
-    .top-nav{
-        display: none;
-    }
+    
+    .top-nav-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
     .main-nav-chang{
         background-color: black;
         border-radius: 0px;
