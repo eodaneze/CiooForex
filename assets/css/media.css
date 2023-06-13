@@ -1,10 +1,7 @@
 @media(max-width: 600px){
     
-    .top-nav-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
+    .top-nav-icon a{
+        margin: 0 10px;
       }
     .main-nav-chang{
         background-color: black;
