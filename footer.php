@@ -1,70 +1,28 @@
- <!-- footer-section -->
- <footer>
-     <div class="content">
-         <div class="top">
-             <div class="logo-details">
-                 <img src="./assets/img/small-fev.png" alt="">
-                 <span class="logo_name">CiooForex</span>
-             </div>
-             <div class="media-icons">
-                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                 <a href="#"><i class="fab fa-twitter"></i></a>
-                 <a href="#"><i class="fab fa-instagram"></i></a>
-                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                 <a href="#"><i class="fab fa-youtube"></i></a>
-             </div>
-         </div>
-         <div class="link-boxes">
-             <ul class="box">
-                 <li class="link_name">Company</li>
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Contact us</a></li>
-                 <li><a href="#">About us</a></li>
-                 <li><a href="#">Get started</a></li>
-             </ul>
-             <ul class="box">
-                 <li class="link_name">Services</li>
-                 <li><a href="#">Mentorship</a></li>
-                 <li><a href="#">Webinar</a></li>
-                 <li><a href="#">Trade Signal</a></li>
-                 <li><a href="#">Bootcamp</a></li>
-             </ul>
-             <ul class="box">
-                 <li class="link_name">Address</li>
-                 <li><a href="#">No 2 Country man road Abakaliliki</a></li>
-             </ul>
-             <ul class="box">
-                 <li class="link_name">About</li>
-                 <li><a href="#">Our Strategy delivers the best trading opportunities in the financial markets while
-                         cutting your risk low to maximize profit.</a></li>
+<footer id="footer" class="footer">
+    <div class="copyright">
+        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+</footer><!-- End Footer -->
 
-             </ul>
-             <ul class="box input-box">
-                 <li class="link_name">Subscribe</li>
-                 <li><input type="text" placeholder="Enter your email"></li>
-                 <li><input type="button" value="Subscribe"></li>
-             </ul>
-         </div>
-     </div>
-     <div class="bottom-details">
-         <div class="bottom_text">
-             <span class="copyright_text">Copyright © 2023 <a href="#">CiooForex.</a>All rights reserved</span>
-             <span class="policy_terms">
-                 <a href="https://github.com/eodaneze">Developed by @Dev_Daniels</a>
-                 <a href="#">08164869025</a>
-             </span>
-         </div>
-     </div>
- </footer>
- <!-- end of footer-section -->
- <!--  -->
- <!-- ############################ back to top###################### -->
- <a href="#" class="back-to-top d-flex align-items-center justify-content-center text-dark"><i
-         class="fa fa-arrow-up"></i></a>
- <!-- ############################ end of back to top###################### -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
- </script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
- </script>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
- <script src="./assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="dashboard_assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="dashboard_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dashboard_assets/vendor/chart.js/chart.umd.js"></script>
+<script src="dashboard_assets/vendor/echarts/echarts.min.js"></script>
+<script src="dashboard_assets/vendor/quill/quill.min.js"></script>
+<script src="dashboard_assets/vendor/simple-datatables/simple-datatables.js"></script>
+<script src="dashboard_assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="dashboard_assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="dashboard_assets/js/main.js"></script>

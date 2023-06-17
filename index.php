@@ -1,5 +1,5 @@
 <?php
-  require_once('./header.php')
+  require_once('./home_header.php')
 ?>
 
 <body>
@@ -574,7 +574,7 @@
     <!-- end of contact section -->
 
     <?php
-  require_once('./footer.php') 
+  require_once('./home_footer.php') 
 
 ?>
 </body>
