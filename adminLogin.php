@@ -22,7 +22,6 @@ $title = "Admin Login";
                             </div><!-- End Logo -->
 
                             <div class="card mb-3">
-
                                 <div class="card-body">
 
                                     <div class="pt-4 pb-2">

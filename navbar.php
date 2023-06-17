@@ -1,10 +1,21 @@
-!-- ======= Header ======= -->
+<?php
+require_once('./includes/connection.php');
+  if(isset($_SESSION['adminid'])){
+      $id = $_SESSION['adminid'];
+      $sql = "SELECT * FROM admin WHERE id = '$id'";
+      $result = mysqli_query($conn, $sql);
+      $row = mysqli_fetch_array($result);
+      $name = $row['name'];
+      $pic = $row['apic'];
+  }
+
+?>
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-            <img src="dashboard_assets/img/logo.png" alt="">
-            <span class="d-none d-lg-block">DanShop</span>
+            <img src="./assets/img/small-fev.png" alt="">
+            <span class="d-none d-lg-block">CiooForex</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -26,13 +37,13 @@
             <li class="nav-item dropdown pe-3">
 
                 <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                    <img src="dashboard_assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                    <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                    <img src="./includes/admindp/<?=$pic?>" alt="Profile" class="rounded-circle">
+                    <span class="d-none d-md-block dropdown-toggle ps-2"><?=$name?></span>
                 </a><!-- End Profile Iamge Icon -->
 
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header">
-                        <h6>Kevin Anderson</h6>
+                        <h6><?=$name?></h6>
                         <span>Web Designer</span>
                     </li>
                     <li>
