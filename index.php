@@ -4,88 +4,11 @@
 
 <body>
     <div class="all-background">
-        <!-- ###################### Top-navbar########################## -->
-
-        <div class="all-top shadow">
-            <div class="container">
-                <div class="top-nav-icon">
-                    <a href="https://www.instagram.com/cioo_forex_academy/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://t.me/big_cioo" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://web.facebook.com/people/Cioo-forex-academy/100066836860720/?mibextid=LQQJ4d"
-                        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@cioo_forex_academy?_t=8ahpwmrd2u2&_r=1" target="_blank"><i
-                            class="fa-brands fa-tiktok"></i></i></a>
-                    <a href="https://twitter.com/big_cioo?s=21" target="_blank"><i
-                            class="fa-brands fa-twitter"></i></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- ######################end of  Top-navbar########################## -->
-
-
-        <!--####################### main-nav-bar################################ -->
-        <div class="all-navbar">
-            <nav class="navbar navbar-expand-lg  main-nav">
-                <div class="container nav-content shadow">
-                    <a class="navbar-brand logo" href="#"><img src="./assets/img/small-fev.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Mentorship</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Trade Signals</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Competition</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="#">Webinar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Funds Management</a>
-                            </li>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!--#######################end of main-nav-bar################################ -->
-
-        <!-- ####################### Hero-section######################### -->
-
-        <div class="all-hero">
-            <div class="hero-content">
-                <div class="container">
-                    <div>
-                        <h4>
-                            <span>With the help of our industry leading</span>
-                            <span> forex trading strategy, you can finally</span>
-                            <span>______Be The Best You.</span>
-                        </h4>
-                        <h1 class="text-uppercase">
-                            <span>Cioo Forex</span>
-                            <span>Academy</span>
-                        </h1>
-
-                    </div>
-                    <!-- <div class="hero-btn mt-3">
-                           <button class="btn">Mentorship</button>
-                           <button class="btn">Signals</button>
-                      </div> -->
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- ####################### end of  Hero-section######################### -->
+        <?php
+          require_once('./topNav.php');
+          require_once('./home_navbar.php');
+          require_once('./hero.php');
+        ?>
 
     </div>
 
@@ -161,7 +84,7 @@
                         </div>
                     </div>
                     <div class="text-center plan-btn">
-                        <button>Get Started</button>
+                        <button><a href="" class="text-decoration-none text-white">Get Started</a></button>
                     </div>
                 </div>
                 <div class="price-1 bg-white border">
