@@ -1,0 +1,89 @@
+<!-- Add the Paystack JavaScript library -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+<!-- Create a button to initiate the payment -->
+
+    <input type="text" id="name"><br>
+<input type="email" id="email"><br>
+<input type="number" id="amount"><br>
+<button id="payButton" onclick="initializePayment()">Pay with Paystack</button>
+
+
+<script>
+  // Initialize the payment
+  function initializePayment() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const amount = document.getElementById('amount').value;
+    // Replace 'YOUR_PUBLIC_KEY' with your Paystack public key
+    var publicKey = 'pk_live_34874a1fc595fb6da0634322599f949163067dc4';
+
+    // Generate a unique reference for this transaction
+    var reference = generateReference();
+
+    // Get the amount to be paid (in kobo)
+    // var amount = 50000; // Replace with the actual amount in kobo
+    // var amount = 50000;
+
+    // Create a Paystack Inline instance
+    var handler = PaystackPop.setup({
+      key: publicKey,
+      email: email, // Replace with the customer's email
+      amount: amount,
+      firstname: name,
+      ref: reference,
+      metadata: {
+        custom_fields: [
+          {
+            display_name: 'Mobile Number',
+            variable_name: 'mobile_number',
+            value: '+2348012345678', // Replace with the customer's mobile number
+          },
+        ],
+      },
+      callback: function (response) {
+        // Handle the response after a successful payment
+        verifyTransaction(reference);
+      },
+      onClose: function () {
+        // Handle the case where the user closes the payment modal without completing the payment
+        console.log('Payment window closed');
+      },
+    });
+
+    // Open the Paystack payment modal
+    handler.openIframe();
+  }
+
+  // Verify the transaction
+  function verifyTransaction(reference) {
+    // Send an AJAX request to your server to verify the transaction
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/verify-transaction?reference=' + reference, true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        if (response.status === 'success') {
+          // Transaction is successful, process the order
+          alert('Payment successful');
+        } else {
+          // Transaction failed or pending, handle accordingly
+          alert('Payment failed');
+        }
+      } else {
+        console.log('Request failed. Status:', xhr.status);
+      }
+    };
+    xhr.send();
+  }
+
+  // Function to generate a unique reference
+  function generateReference() {
+    var reference = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (var i = 0; i < 10; i++) {
+      reference += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return reference;
+  }
+</script>

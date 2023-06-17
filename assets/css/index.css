@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@800&display=swap');
 :root{
     --main: #FA6F01;
     --secondary: #021220;
     --font: 'PT Serif', serif;
+    --font-2:  'Poppins', sans-serif;
 }
 body{
     background-color: #f0f0f0;
@@ -148,8 +150,10 @@ body{
 }
 .hero-content div h1{
     color: #fff;
-    font-family: var(--font);
+    font-family: var(--font-2);
     transition: .30s ease;
+    font-weight: 600;
+    font-size: 70px;
 }
 .hero-content div h1:hover{
    -webkit-text-stroke: .5px #fff;
