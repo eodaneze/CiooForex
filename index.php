@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="text-center plan-btn">
-                        <button><a href="" class="text-decoration-none text-white">Get Started</a></button>
+                        <button><a href="./erisk.php" class="text-decoration-none text-white">Get Started</a></button>
                     </div>
                 </div>
                 <div class="price-1 bg-white border">

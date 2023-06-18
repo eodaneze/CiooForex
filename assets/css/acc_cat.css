@@ -1,0 +1,39 @@
+@import url(./index.css);
+.all-risk{
+    background-color: black;
+}
+.alert-att{
+    background-color: #050316;
+    color: white;
+    border: 2px solid #fff;
+}
+.alert-att div i:hover{
+    cursor: pointer;
+}
+.risk-header h1 span{
+    display: block;
+    color: white;
+    font-family: var(--font);
+}
+.risk-header h1 span:last-child{
+    color: var(--main)!important;
+    font-size: 20px;
+}
+.form-content{
+    display: flex;
+}
+.risk-form input, .risk-form select{
+    border: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+}
+.submit-btn button{
+  background-color: var(--main);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
