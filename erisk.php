@@ -11,6 +11,34 @@ $title = 'Extreme Risk';
 ?>
 </div>
 <!-- all extreme risk section -->
+
+<?php
+  if(isset($_GET['error'])){
+      ?>
+<script>
+swal({
+    title: "<?=urldecode($_GET['error'])?>",
+    text: "check back",
+    icon: "error",
+    button: "Aww yiss!",
+});
+</script>
+
+<?php   
+  }elseif(isset($_GET['success'])){
+    ?>
+<script>
+swal({
+    title: "<?=urldecode($_GET['success'])?>",
+    text: "Continue payment",
+    icon: "success",
+    button: "Aww yiss!",
+});
+</script>
+
+<?php 
+  }
+?>
 <div class="all-risk p-5">
     <div class="container">
         <div class="row">
@@ -106,7 +134,7 @@ $title = 'Extreme Risk';
                             </div>
                             <div class="col-lg-6 risk-form mb-4">
                                 <label for="" class="text-white">Category</label>
-                                <select name="platform" id="">
+                                <select name="category" id="">
                                     <option class="bg-dark">--Select Category--</option>
                                     <option class="bg-dark">Extreme Risk</option>
                                 </select>
