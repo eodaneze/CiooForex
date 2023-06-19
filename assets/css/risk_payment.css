@@ -1,0 +1,55 @@
+@import url(../css/index.css);
+body{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/desktop-hero.jpg) center/cover fixed no-repeat;
+    height: 300vh;
+}
+.pay-title-alert{
+    display: flex;
+    gap: 2rem;
+}
+.pay-title{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 0px 0px 20px 20px;
+}
+.pay-title div{
+   display: flex;
+   align-items: center;
+}
+.pay-title img{
+    width: 3rem;
+    height: 3rem;
+}
+.pay-title div h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.pay-title div h3 span:last-child{
+    color: var(--main);
+}
+.pay-alert{
+    position: fixed;
+    top: 3rem;
+    right: 30rem;
+}
+.form-bg{
+    background-color: #f0f0f0;
+    height: 100vh;
+    border-radius: 10px;
+}
+.charge-convert h1{
+    font-size: 25px;
+    font-family: var(--font);
+    color: #555;
+}
+.details p span{
+    display: block;
+}
+.no-refund p span{
+  display: block;
+  font-family: var(--font);
+  color: #555;
+  font-size: 15px;
+}

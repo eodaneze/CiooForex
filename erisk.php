@@ -20,7 +20,7 @@ swal({
     title: "<?=urldecode($_GET['error'])?>",
     text: "check back",
     icon: "error",
-    button: "Aww yiss!",
+    button: "Close",
 });
 </script>
 
@@ -30,9 +30,9 @@ swal({
 <script>
 swal({
     title: "<?=urldecode($_GET['success'])?>",
-    text: "Continue payment",
+    text: "<h1>Extreme Risk Category</h1>",
     icon: "success",
-    button: "Aww yiss!",
+    button: "Close",
 });
 </script>
 
@@ -70,21 +70,20 @@ swal({
 
         <div class="risk-reg mt-5">
             <div class="form-content">
-                <div class="left-form-content">
-                    <p class="text-white text-center lead mb-5">Fill the form below to register for the extreme risk
-                        account
-                        management.</p>
-                </div>
                 <div class="main-form">
                     <form action="./includes/Extreme_Risk.php" method="post">
                         <div class="row">
-                            <div class="col-lg-6 risk-form mb-4">
+                            <div class="col-lg-4 risk-form mb-4">
                                 <label for="" class="text-white">FullName</label>
                                 <input type="text" name="name">
                             </div>
-                            <div class="col-lg-6 risk-form mb-4">
+                            <div class="col-lg-4 risk-form mb-4">
                                 <label for="" class="text-white">Instagram Username</label>
                                 <input type="text" name="in_user">
+                            </div>
+                            <div class="col-lg-4 risk-form mb-4">
+                                <label for="" class="text-white">Email</label>
+                                <input type="email" name="email" placeholder="example@gmail.com">
                             </div>
                             <div class="col-lg-6 risk-form mb-4">
                                 <label for="" class="text-white">Phone (Whatsapp)</label>
