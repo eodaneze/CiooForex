@@ -17,7 +17,7 @@
                           <a class="nav-link" href="#">Trade Signals</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Competition</a>
+                          <a class="nav-link" href="./pip_Impact.php">Pip Impact</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link text-black" href="#">Webinar</a>

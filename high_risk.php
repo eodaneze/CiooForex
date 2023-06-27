@@ -1,5 +1,5 @@
 <?php
-$title = 'Extreme Risk';
+$title = 'High Risk';
    require_once("./home_header.php");
    ?>
 <div class="all-background">
@@ -54,21 +54,22 @@ swal({
                         Account management category
                     </span>
                     <span class="mb-4">
-                        (Extreme risk)
+                        (High risk)
                     </span>
                 </h1>
                 <div class="details">
                     <p>
-                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i> Risk =
-                            100%</span>
-                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i> Profit target=
-                            400%</span>
-                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i> Duration = 1
+                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i>Equity =$200
+                            -$1000</span>
+                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i>
+                            Risk = 80%</span>
+                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i>Profit target=
+                            300%k</span>
+                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i>Duration = 1
                             week</span>
                         <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i> Contracts
-                            duration = 1
-                            month</span>
-                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i> Trading fee=
+                            duration = 1 month</span>
+                        <span class="text-white"><i class="fa fa-check" style="color: var(--main);"></i>Trading fee=
                             0%</span>
                     </p>
                 </div>
@@ -76,7 +77,7 @@ swal({
             <div class="col-lg-4">
                 <div class="alert alert-att alert-dismissible fade show d-flex" role="alert">
                     <div>
-                        <strong style="color: var(--main);">Attention!</strong> <br> This Registration is for Extreme
+                        <strong style="color: var(--main);">Attention!</strong> <br> This Registration is for High
                         risk
                         Account management category
                     </div>
