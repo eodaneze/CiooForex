@@ -72,6 +72,17 @@
     margin-bottom: 10px;
 
 }
+.register-btn a{
+    text-decoration: none;
+    background-color: #FA6F01;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    transition: background .30s ease;
+    margin-bottom: 10px;
+
+}
 .register-btn button:hover{
     background-color: transparent;
     color: black;
