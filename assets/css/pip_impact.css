@@ -1,0 +1,88 @@
+.all-pip{
+    margin: 4% 7%; 
+}
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background-color: #ff523b;
+    width: 80px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.benefit span, .prize span, .benefit_list span{
+    display: block;
+    line-height: 1.5rem;
+}
+.vision_mission, .reg_duration, .voting_benefit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vision, .pip_registration, .duration, .voting, .benefits{
+    flex-basis: 45%;
+}
+.mission{
+    flex-basis: 45%;
+}
+.vision_content p:first-letter, 
+.mission_content p:first-letter,
+.pip_registration_content p:first-letter,
+.duration_content p:first-letter
+{
+/*    color: red;*/
+    font-size: 40px;
+    font-weight: bold;
+}
+.vision_content p,
+.mission_content p,
+.pip_registration_content p,
+.duration_content p,
+.voting_content p, 
+.benefits-content p{
+    line-height: 1.5rem;
+}
+
+.cash_awards div{
+    display: flex;
+/*    align-items: flex-start;*/
+}
+.fa-solid, .fa-check{
+    color: orangered;
+}
+.register-btn{
+    text-align: center;
+}
+.register-btn button{
+    background-color: #FA6F01;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    transition: background .30s ease;
+    margin-bottom: 10px;
+
+}
+.register-btn button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid; #ccc;
+
+}
+@media only screen and (max-width: 600px){
+    .vision, .mission, .pip_registration, .duration, .voting, .benefits{
+        flex-basis: 100%;
+    }
+    .cash_awards div{
+         flex-direction: column;
+    }
+}

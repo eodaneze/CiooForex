@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/pip_impact.css">
+</head>
+<body>
+  <div class="all-pip">
+    <div class="about-pip">
+          <div class="about-title">
+              <h3>About Pip Impact</h3>
+          </div>
+          <div class="about-content">
+              <p style="color: white; font-size:20px">Pip impact program was first launched on July Ist 2022. The program mission and vision is to encourage young and ambitious traders by empowering them with capital and knowledge to start thier own trading and business journey<span id="dots">...</span>
+             <span id="more">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos dolore, quas facilis esse quia ipsa similique cumque natus incidunt eveniet consequatur quae libero alias voluptatem, nesciunt, sapiente animi non eaque accusamus optio odit nostrum totam repudiandae. Ipsa, illo excepturi. Hic, temporibus. Commodi, et neque tenetur mollitia doloribus officiis excepturi. Autem doloremque, quia illum accusamus ad ratione voluptates tempore officia? Necessitatibus, ducimus aperiam et aspernatur porro recusandae hic voluptatem autem tempore magnam, beatae veniam temporibus est nulla in vitae minus quaerat aut dolores enim labore quae. Ipsa, placeat. Itaque commodi, minima ab ut blanditiis sed odit et, dignissimos inventore consectetur necessitatibus.</span></p>
+          </div>
+          <button onclick="myFunction()" id="btn">Read More</button>
+          <p style="color: white;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta mollitia aperiam nihil maxime commodi odit. Atque necessitatibus numquam exercitationem ab aut iure asperiores laudantium voluptatem harum nemo expedita adipisci sit itaque explicabo cum, earum voluptatum dicta! Nihil nobis vero ea. Eius optio iste facere, nostrum eligendi obcaecati iusto voluptatibus ipsam velit a repellendus similique. Inventore ex tenetur deserunt repellat ad voluptates aut qui libero vel quaerat commodi architecto accusantium neque rem beatae voluptas harum cupiditate amet ducimus in, eos officiis nesciunt. Sint molestias ipsam maxime, dolor, libero dignissimos reprehenderit beatae, rerum at sed consequuntur esse delectus laboriosam quibusdam qui!
+          </p>
+    </div>
+</div>
+
+<script>
+  const myFunction = () => {
+      let dots = document.getElementById('dots');
+      let moreText = document.getElementById('more');
+      let btnText = document.getElementById('btn');
+
+      if(dots.style.display === 'none'){
+          dots.style.display = 'inline';
+          btnText.innerHTML = 'Read More';
+          moreText.style.display = 'none';
+      }else{
+        dots.style.display = 'none';
+          btnText.innerHTML = 'Read Less';
+          moreText.style.display = 'inline';
+      }
+  }
+</script>
+</body>
+</html>
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}.about-pip{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.about-title{
+    text-align: center;
+}
+.about-title h3{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+}
+.about-pip h3::after{
+    content: '';
+    background-color: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-content{
+    margin: 0 8%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+#more{
+    display: none;
+}
