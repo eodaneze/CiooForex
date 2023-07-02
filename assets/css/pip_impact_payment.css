@@ -1,0 +1,112 @@
+@import('./index.css');
+.all_pip_payment{
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/desktop-hero.jpg) center/cover fixed no-repeat;
+/*    height: 100vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+.payment_section{
+	width: 40%;
+}
+.payment-box{
+	background: #f0f0f0;
+	padding: 20px;
+	border-radius: 10px;
+/*	width: 50%;*/
+}
+.payment_header{
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	margin-bottom: 20px;
+}
+.payment_header img{
+	width: 3rem;
+	height: 3rem;
+}
+.payment_header h5{
+	font-family: var(--font);
+	font-size: 18px;
+	color: #555;
+}
+label{
+	font-family: var(--font);
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.pip_price h4 span{
+	display: block;
+	text-transform: uppercase;
+}
+.pip_price h4 span:first-child{
+  font-size: 10px;
+  color: #555;
+  font-family: var(--font);
+}
+.pip_price h4 span:last-child{
+	 font-size: 30px;
+	 font-weight: bolder;
+	 font-family: var(--font);
+}
+.pip_price p{
+	font-family: var(--font);
+	color: #555;
+	font-size: 12px;
+}
+.pip_price p a{
+	text-decoration: none;
+}
+.payment_notice{
+/*	width: 50%;*/
+	position: sticky;
+	top: 0;
+
+}
+.payment_alert{
+	background: #000;
+	border: 1px solid #fff;
+	color: white;
+}
+.attention{
+	font-size: 20px;
+	font-family: var(--font);
+	color: red;
+	background-color: white;
+	padding: 3px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+.payment_alert span{
+	font-family: var(--font);
+	font-size: 13px;
+}
+@media(max-width: 800px){
+.all_pip_payment{
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/desktop-hero.jpg) center/cover fixed no-repeat;
+/*    height: 100vh;*/
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ .payment_header{
+	flex-direction: column;
+ }
+ .payment_section{
+	width: 100%;
+}
+}
+@media(max-width: 600px){
+.all_pip_payment{
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/desktop-hero.jpg) center/cover fixed no-repeat;
+/*    height: 100vh;*/
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ .payment_header{
+	flex-direction: column;
+ }
+ .payment_section{
+	width: 100%;
+}
+}

@@ -25,7 +25,16 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// pip-payment-alert
 
+let all_pay = document.querySelector('.payment_alert');
+window.addEventListener('scroll', () => {
+   if(window.pageYOffset > 100){
+      all_pay.classList.add('payment_alert_js')
+   }else{
+     all_pay.classList.remove('payment_alert')
+   }
+})
 
 // hero-section-slider
 

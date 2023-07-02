@@ -33,6 +33,7 @@
 }
 .mission{
     flex-basis: 45%;
+    /* background-color: #f7470277; */
 }
 .vision_content p:first-letter, 
 .mission_content p:first-letter,
@@ -72,21 +73,11 @@
     margin-bottom: 10px;
 
 }
-.register-btn a{
-    text-decoration: none;
-    background-color: #FA6F01;
-    color: white;
-    padding: 10px 50px;
-    border: none;
-    border-radius: 50px;
-    transition: background .30s ease;
-    margin-bottom: 10px;
 
-}
 .register-btn button:hover{
     background-color: transparent;
     color: black;
-    border: 1px solid; #ccc;
+    border: 1px solid #ccc;
 
 }
 @media only screen and (max-width: 600px){

@@ -49,7 +49,7 @@ require_once('./connection.php');
                      $result = mysqli_query($conn, $sql);
                     if($result){
                         $success = urlencode("Registration successful!!");
-                        header("location:../pip_impact_register.php?success=".$success);
+                        header("location:../pip_impact_payment.php?success=".$success);
                         return false;
                     }else{
                          $error = urlencode("Error Registering For Pip Impact");

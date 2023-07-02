@@ -32,7 +32,7 @@
         }
     ?>
 
-  <div class="all-register-pip bg-white w-50 p-5 my-5">
+  <div class="all-register-pip bg-white w-50 p-5 my-5 shadow">
      <form action="./includes/pip_impact.php" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-lg-6 mb-4">
@@ -93,6 +93,7 @@
                         </div>
                         <div class="register-btn p-2 border-top">
                             <button class="" name="register">Register</button>
+                            <p>have already registered for the pip impact program? <a href="./pip_impact_payment.php">Make Payment</a></p>
                         </div>
                     </form>
   </div>
