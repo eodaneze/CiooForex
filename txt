@@ -1,13 +1,54 @@
-<?php
-$title = "Pip impact";
-  require_once('./home_header.php');
-?>
+// Include the Paystack JavaScript library
+<script src="https://js.paystack.co/v1/inline.js"></script>
 
-<div class="all-background">
-    <?php
-    
-    require_once('./topNav.php');
-    require_once('./home_navbar.php');
-    require_once('./hero.php');
-?>
-</div>
+// Initialize the Paystack payment
+function initializePayment() {
+  var paymentForm = document.getElementById('paymentForm');
+  
+  // Get your public key from the Paystack dashboard
+  var publicKey = 'YOUR_PAYSTACK_PUBLIC_KEY';
+  
+  // Generate a unique reference for the transaction
+  var reference = generateReference();
+  
+  // Set up the payment options
+  var options = {
+    key: publicKey,
+    email: 'customer@example.com',
+    amount: 500000, // Amount in kobo
+    currency: 'NGN',
+    ref: reference,
+    callback: function(response) {
+      // Handle the response from Paystack
+      if (response.status === 'success') {
+        // Payment was successful
+        // Perform necessary actions here, such as updating your database, delivering goods, etc.
+        console.log('Payment successful!');
+      } else {
+        // Payment was not successful
+        console.log('Payment unsuccessful!');
+      }
+    },
+    onClose: function() {
+      // Handle the case when the Paystack modal is closed without completing the payment
+      console.log('Payment modal closed.');
+    }
+  };
+  
+  // Initialize the payment
+  var paystack = window.PaystackPop.setup(options);
+  paystack.openIframe();
+}
+
+// Generate a unique reference for the transaction
+function generateReference() {
+  var reference = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  
+  for (var i = 0; i < 10; i++) {
+    reference += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  
+  return reference;
+}

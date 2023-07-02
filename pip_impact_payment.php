@@ -3,7 +3,7 @@
     require_once('./home_header.php');
 ?>
 <link rel="stylesheet" type="text/css" href="./assets/css/pip_impact_payment.css">
-<script src="https://js.paystack.co/v1/inline.js"></script>
+
 <body>
     <div class="all_pip_payment">
         <div class="payment_section">
@@ -25,34 +25,39 @@
                        </h4>
                        <p>Payment would be processed by <a class="text-primary" href="https://paystack.com/about">Paystack</a></p>
                   </div>
-                  <form>
+                
                        <div class="row">
                            <div class="col-12 mb-3">
                                 <label>Name</label><br>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" id="name" class="form-control">
                            </div>
                        </div>
                        <div class="row">
                            <div class="col-12 mb-4">
                                 <label>Email</label><br>
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="email" id="email" class="form-control">
                            </div>
                        </div>
                        <div class="row">
                            <div class="col-12 mb-4">
                                 <label>Whatsapp Number</label><br>
-                                <input type="text" name="phone" class="form-control">
+                                <input type="text" name="phone" id="phone" class="form-control">
                            </div>
                        </div>
                        <div class="pay_btn">
-                            <button class="btn btn-success">Pay Now</button>
+                            <button onclick="paywithpaystack()"  class="btn btn-success">Pay Now</button>
                        </div>
-                  </form>
+                  
             </div>
         </div>
           
     </div>
 
+    <script src="./assets/js/pip_impact_payment.js"></script>
+
+
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
     <?php
      require_once('./home_footer.php');
      ?>
